@@ -28,17 +28,19 @@ function App() {
           cy="60"
         />
       </svg>
-      <span id="date">{today}</span>
-      <div className="img-container">
+      <div className="clock-row">
+        <span id="date">{today}</span>
+        <span id="ampm">
+          {Time.getMeriadiam()}
+        </span>
+      </div>
+      <div className="clock-row">
         <span id="hr" className="digit">
           {Time.getFormatedHours()}
         </span>
-        <span className="digit">:</span>
+        <span className="seperator">:</span>
         <span id="min" className="digit">
           {Time.getFormatedMinutes()}
-        </span>
-        <span id="ampm" className="digit">
-          {Time.getMeriadiam()}
         </span>
       </div>
     </div>

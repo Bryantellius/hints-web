@@ -17,16 +17,8 @@
 html {
   position: relative;
   color: black;
-  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
   font-family: monospace;
-}
-
-#date {
-  color: white;
-  padding: 1rem;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  filter: drop-shadow(0 0 5px #eee);
 }
 
 .root {
