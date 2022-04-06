@@ -1,6 +1,5 @@
 .clock-row {
   max-width: 70vw;
-  min-width: 50vw;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -11,8 +10,7 @@
   width: 100%;
   height: 100%;
   color: white;
-  padding: 1rem;
-  border: 1px solid #eee;
+  padding: 0.25rem;
   border-radius: 8px;
   filter: drop-shadow(0 0 5px #eee);
 }
@@ -42,16 +40,19 @@
 
 .progress-ring {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
-  height: 120px;
-  width: 120px;
+  right: auto;
+  top: auto;
+  height: 60vmin;
+  width: 60vmin;
 }
 
 .seconds-ring {
   transition: 0.35s stroke-dashoffset;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
+  cx: 30vmin;
+  cy: 30vmin;
+  r: 28vmin;
 }
 
 @keyframes flash {

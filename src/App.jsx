@@ -13,6 +13,10 @@ function App() {
     }, 1000);
   }, []);
 
+
+  let vmin = window.visualViewport.height > window.visualViewport.width ? window.visualViewport.width : window.visualViewport.height;
+  let radius = 0.28 * vmin;
+
   return (
     <div className="root d-flex flex-column justify-content-center align-items-center">
       <svg className="progress-ring">
@@ -20,12 +24,9 @@ function App() {
           className="seconds-ring"
           stroke="white"
           strokeWidth="4"
-          strokeDasharray={52 * 2 * Math.PI}
-          strokeDashoffset={setProgress(now.getSeconds())}
+          strokeDasharray={radius * 2 * Math.PI}
+          strokeDashoffset={setProgress(radius, now.getSeconds())}
           fill="transparent"
-          r="52"
-          cx="60"
-          cy="60"
         />
       </svg>
       <div className="clock-row">

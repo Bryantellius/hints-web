@@ -18,8 +18,7 @@ export class Time {
   }
 }
 
-export function setProgress(percent) {
-  let radius = 52;
+export function setProgress(radius, percent) {
   let circumference = radius * 2 * Math.PI;
   const offset = circumference - (percent / 60) * circumference;
   return offset;
