@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tc-blue: #0094c8;
+  --tc-gray: #8b8a8d;
+  --dark-primary: #111; /* #1d2d50 */
+  --dark-secondary: #333; /* #133b5c */
+  --dark-info: #1e5f74;
+  --dark-warning: #fcdab7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Simple Selectors */
+html {
+  position: relative;
+  color: #222;
+  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.base {
+  height: 100vh;
+  position: relative;
+}
+
+/* HEADER */
+.header-title {
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-emblem {
+  font-family: cursive;
+  font-weight: 900;
+}
+
+/* BOARD */
+.board-space {
+  width: 60px;
+  height: 60px;
+  text-transform: uppercase;
+}
+
+/* UTILITY */
+.m-w-500 {
+  max-width: 500px;
+}
