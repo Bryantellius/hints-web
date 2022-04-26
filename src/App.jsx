@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import CountdownTimer from "./components/CountDown";
 import { Time, setProgress } from "./utils/time";
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
 
   return (
     <div className="root d-flex flex-column justify-content-center align-items-center">
-      <svg className="progress-ring">
+      <CountdownTimer targetDate={"2022-09-05"} />
+      {/* <svg className="progress-ring">
         <circle
           className="seconds-ring"
           stroke="white"
@@ -43,7 +45,7 @@ function App() {
         <span id="min" className="digit">
           {Time.getFormatedMinutes()}
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }
